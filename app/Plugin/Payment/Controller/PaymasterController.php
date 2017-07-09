@@ -1,7 +1,6 @@
 <?php
 App::uses('PaymentAppController', 'Payment.Controller');
 
-
 class PaymasterController extends PaymentAppController
 {
     public $uses = array('PaymentMethod', 'Order');
@@ -155,6 +154,10 @@ class PaymasterController extends PaymentAppController
         return $form;
     }
 
+
+    /**
+     * Пустая функция, но оставлено как hook
+     */
     public function after_process()
     {
     }
